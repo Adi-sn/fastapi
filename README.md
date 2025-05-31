@@ -34,15 +34,10 @@ source venv/bin/activate
 
 2. Install dependencies:
 ```bash
-pip install fastapi uvicorn pydantic python-dotenv requests
+pip install fastapi uvicorn dotenv requests
 ```
 
-3. Create requirements.txt:
-```bash
-pip freeze > requirements.txt
-```
-
-4. Create a `.env` file in the root directory:
+3. Create a `.env` file in the root directory:
 ```bash
 # Add your Gemini API key
 GEMINI_API_KEY=your_api_key_here
@@ -50,11 +45,7 @@ GEMINI_API_KEY=your_api_key_here
 
 ## Project Setup
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/fastapi-gemini.git
-cd fastapi-gemini
-```
+1. Clone the repository
 
 2. Set up the environment (as described above)
 
