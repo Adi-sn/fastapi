@@ -19,7 +19,9 @@ A FastAPI application that integrates with Google's Gemini AI API to generate co
 
 ## Environment Setup
 
-1. Create a virtual environment:
+1. Clone the repository
+
+2. Create a virtual environment:
 ```bash
 # Using venv
 python -m venv venv
@@ -32,24 +34,18 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-2. Install dependencies:
+3. Install dependencies:
 ```bash
 pip install fastapi uvicorn dotenv requests
 ```
 
-3. Create a `.env` file in the root directory:
+4. Create a `.env` file in the root directory:
 ```bash
 # Add your Gemini API key
 GEMINI_API_KEY=your_api_key_here
 ```
 
-## Project Setup
-
-1. Clone the repository
-
-2. Set up the environment (as described above)
-
-3. Start the server:
+5. Start the server:
 ```bash
 uvicorn main:app --reload
 ```
