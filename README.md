@@ -92,10 +92,25 @@ Example request body for the `/ask` endpoint:
 └── requirements.txt # Project dependencies
 ```
 
-## Development Setup
+## Error Handling
 
-1. Fork and clone the repository
-2. Create and activate virtual environment
-3. Install dependencies
-4. Add `.env` file with your Gemini API key
-5. Run the development server
+The application includes robust error handling for:
+- Missing API keys
+- Failed API requests
+- Invalid request formats
+- Server-side errors
+
+## Security Notes
+
+- Never expose your Gemini API key in your code
+- Add `.env` to your `.gitignore` file
+- Use environment variables for all sensitive data
+
+## Project Structure
+
+```
+├── main.py           # FastAPI application and route handlers
+├── schemas.py        # Pydantic models for request/response validation
+├── .env             # Environment variables (create this file)
+└── README.md        # Project documentation
+```
